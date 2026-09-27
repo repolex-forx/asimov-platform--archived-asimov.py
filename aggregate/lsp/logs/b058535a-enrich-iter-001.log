@@ -1,0 +1,17 @@
+[2026-09-27T19:24:44Z] === ENRICH ITERATION 1 START | repo=asimov-platform/archived-asimov.py sha=b058535a ===
+[2026-09-27T19:24:44Z] [iter=1] PHASE START: enrich repo=asimov-platform/archived-asimov.py sha=b058535a runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b058535a-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b058535a14de6b810854d1159783aaf677244101.nq.gz
+[2026-09-27T19:24:49Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-27T19:24:49Z] [iter=1] AST store loaded triples=821 load_secs=0 mem_mb=87 MB
+[2026-09-27T19:24:49Z] [iter=1] Step 2: Finding LSP targets mem_mb=87 MB
+[2026-09-27T19:24:49Z] [iter=1] LSP targets found call_sites=5 imports=1 extends=0 implements=0 secs=0
+[2026-09-27T19:24:49Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=87 MB
+[2026-09-27T19:24:49Z] [iter=1] Position index built positions=52 nodes_with_types=65 secs=0 mem_mb=87 MB
+[2026-09-27T19:24:49Z] [iter=1] Step 3: Starting LSP resolution mem_mb=87 MB already_completed_types=[] already_completed_files=0
+[2026-09-27T19:24:49Z] [iter=1] Resolving target type target_type=call_site count=5
+[2026-09-27T19:25:33Z] [iter=1] Target type resolved target_type=call_site resolved=3 errors=0 secs=44 mem_mb=88 MB
+[2026-09-27T19:25:33Z] [iter=1] Resolving target type target_type=import_statement count=1
+[2026-09-27T19:25:34Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=0.8 files_done=0 resolved=0 errors=0 current=src/asimov/__init__.py
+[2026-09-27T19:25:35Z] [iter=1] Target type resolved target_type=import_statement resolved=1 errors=0 secs=2 mem_mb=88 MB
+[2026-09-27T19:25:46Z] [iter=1] Step 5: Writing final enrichment file triples=74
+[2026-09-27T19:25:46Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/b058535a14de6b810854d1159783aaf677244101.nq.gz size_kb=1
+[2026-09-27T19:25:46Z] [iter=1] PHASE END: enrich elapsed_s=62 elapsed_min=1.0 total_triples=74

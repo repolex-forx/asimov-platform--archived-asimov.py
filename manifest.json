@@ -31,6 +31,36 @@
       ],
       "ast": [
         "aggregate/ast/b058535a14de6b810854d1159783aaf677244101/chunk-001.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/b058535a14de6b810854d1159783aaf677244101.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "pydantic",
+          "ecosystem": "PYPI",
+          "version": "2",
+          "githubOrg": "pydantic",
+          "githubRepo": "pydantic",
+          "githubUrl": "https://github.com/pydantic/pydantic",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "derive_more",
+          "ecosystem": "CARGO",
+          "version": "2",
+          "githubOrg": "JelteF",
+          "githubRepo": "derive_more",
+          "githubUrl": "https://github.com/JelteF/derive_more",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "pyo3",
+          "ecosystem": "CARGO",
+          "version": "0.27",
+          "githubOrg": "pyo3",
+          "githubRepo": "pyo3",
+          "githubUrl": "https://github.com/pyo3/pyo3",
+          "source": "build_file:Cargo.toml"
+        }
       ]
     }
   ],
